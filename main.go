@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/astaxie/beego"
+	_ "github.com/yangmx5/goweb/routers"
+)
 
-func main(){
+func main() {
 	fmt.Println("hello world")
+	beego.Run()
 }
