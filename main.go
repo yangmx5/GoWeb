@@ -8,6 +8,6 @@ import (
 
 func main() {
 	fmt.Println("hello world")
+	beego.BConfig.WebConfig.StaticDir["/static"] = "static"
 	beego.Run()
-
 }
